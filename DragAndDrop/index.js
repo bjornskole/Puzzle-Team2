@@ -13,5 +13,7 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  ev.target.id == data
+    ? ev.target.appendChild(document.getElementById(data))
+    : null;
 }
