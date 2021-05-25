@@ -13,7 +13,6 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   let data = ev.dataTransfer.getData("text");
-  let buffer = {};
   ev.target.id == data
     ? ev.target.appendChild(document.getElementById(data)) +
       console.log(document.getElementById("text"))
