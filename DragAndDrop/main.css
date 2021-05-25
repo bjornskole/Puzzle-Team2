@@ -1,6 +1,21 @@
 body {
   background: #f3f3ea;
-  color: white;
+  /* color: white; */
+}
+div.page {
+  /* background-color: red; */
+  height: auto;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas:
+    "header header header"
+    "image image image"
+    "s1 s2 s3"
+    "s4 s5 s6"
+    "s7 s8 s9";
 }
 
 .info {
@@ -9,21 +24,24 @@ body {
   margin: 10px;
   text-align: center;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 35px;
+  grid-area: header;
 }
 
 #title {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: Arial;
 }
 
 #rest2 {
-  font-size: 13px;
+  font-size: 30px;
+  font-family: Arial;
 }
 
 #text div {
-  position: relative;
-  height: 200px;
-  width: 200px;
+  /* position: relative; */
+  /* height: 200px;
+  width: 200px; */
   border: 1px dashed gray;
   display: inline-block;
   margin: 0;
@@ -32,13 +50,15 @@ body {
 #text {
   width: 614px;
   height: 614px;
-  background: black;
-  border: 5px solid black;
+
   margin: auto;
 }
 
 #images {
+  text-align: center;
   width: 100%;
+  grid-area: image;
+  margin-bottom: -10em;
 }
 
 img {
@@ -61,38 +81,53 @@ img {
   display: inline-block;
 }
 
-/* #drag4 {
-  background: linear-gradient(to bottom right, orange, orange, yellow);
+.s1 {
+  /* margin: 30%; */
+  border: black solid 1px;
+  /* margin: 10px; */
+  grid-area: s1;
 }
 
-#drag5 {
-  background: linear-gradient(to right, red, orange);
+.s2 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s2;
 }
 
-#drag6 {
-  background: linear-gradient(red, orange);
+.s3 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s3;
 }
 
-#drag7 {
-  background: linear-gradient(to bottom right, red, red, orange);
+.s4 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s4;
+}
+.s5 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s5;
+}
+.s6 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s6;
 }
 
-#drag8 {
-  background: yellow;
+.s7 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s7;
 }
-
-#drag9 {
-  background: linear-gradient(orange, yellow);
+.s8 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s8;
 }
-
-#drag10 {
-  background: linear-gradient(to right, orange, yellow);
+.s9 {
+  border: black solid 1px;
+  margin: 10px;
+  grid-area: s9;
 }
-
-#drag11 {
-  background: linear-gradient(red, orange);
-}
-
-#drag12 {
-  background: linear-gradient(to right, red, orange);
-} */
