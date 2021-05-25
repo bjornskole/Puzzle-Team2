@@ -1,9 +1,7 @@
 body {
   background: #f3f3ea;
-  /* color: white; */
 }
 div.page {
-  /* background-color: red; */
   height: auto;
   display: grid;
   align-content: center;
@@ -38,9 +36,6 @@ div.page {
 }
 
 #text div {
-  /* position: relative; */
-  /* height: 200px;
-  width: 200px; */
   border: 1px dashed gray;
   display: inline-block;
   margin: 0;
